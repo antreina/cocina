@@ -1,11 +1,17 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Botonmenu from '../Comonentes/Botonmenu';
 
-export default function App() {
+export default function Receta1({navigation}) {
   return (
     <View style={styles.container}>
-      <Text>Receta de Chifles</Text>
+      <Text style={styles.titulo}>Receta de Chifles</Text>
+
+      <Botonmenu
+       texto= "Menu"
+       onPress= {() => navigation.navigate('Menu')}
+      />
       <StatusBar style="auto" />
     </View>
   );
@@ -22,5 +28,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 
-  
+  titulo:{
+    margin:"3%",
+    color: "#fa4211",
+    fontSize:20,
+    fontWeight:"bold",
+  },
+
 });
