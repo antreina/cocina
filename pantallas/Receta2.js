@@ -1,16 +1,17 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import {Botonmenu , BotonInicio} from '../Comonentes/Botonmenu';
 import { Titulo, TituloIng, TituloPre } from '../Comonentes/Titulo';
+import Styles from './Styles';
 
 export default function Receta2({navigation}) {
   return (
-    <View style={styles.container}>
+    <View style={Styles.container}>
       <Titulo textTitulo = "Ensalada de vegetales"></Titulo>
 
       <TituloIng/>
-        <Text style={styles.texto} > 
+        <Text style={Styles.texto} > 
         2 zanahorias{'\n'}
         1/4 kg (1/2 lb) de guisantes {'\n'}
         1/2 kg (1 lb) de judías verdes {'\n'}
@@ -22,7 +23,7 @@ export default function Receta2({navigation}) {
         </Text>
 
         <TituloPre/>
-        <Text style={styles.texto} >
+        <Text style={Styles.texto} >
           1. Cueza las zanahorias, las judias y las patatas en abundante agua hirviendo.{'\n'}
           2. Cuando esté todo tierno, escurra las verduras y déjelas enfriar.{'\n'}
           3. Corte las patatas y las zanahorias en dados, los tomates en rodajas y las judias verdes en trozos pequeños.{'\n'}
@@ -41,24 +42,3 @@ export default function Receta2({navigation}) {
 }
 //export default Receta1;
 
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#ff22',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-
-  texto:{
-    marginTop:10,
-    marginBottom:10,
-    marginLeft:10,
-    marginEnd:20,
-    fontSize:18,
-    textAlign:"justify",
-    //alignContent:"center"
-  }
-
-})
