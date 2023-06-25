@@ -1,7 +1,7 @@
 import * as React from "react";
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View ,TouchableOpacity, ScrollView} from 'react-native';
-import Botonmenu from "../Comonentes/Botonmenu";
+import {Botonmenu,botonInicio} from "../Comonentes/Botonmenu";
 
 
 export default function Menu ({navigation}) {
