@@ -1,8 +1,8 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Text, View } from 'react-native';
-import {Botonmenu , BotonInicio} from '../Comonentes/Botonmenu';
-import { Titulo, TituloIng, TituloPre } from '../Comonentes/Titulo';
+import {Botonmenu , BotonInicio} from '../Componentes/Botonmenu';
+import { Titulo, TituloIng, TituloPre } from '../Componentes/Titulo';
 import Styles from './Styles';
 
 export default function Receta2({navigation}) {

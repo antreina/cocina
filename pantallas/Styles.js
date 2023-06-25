@@ -16,7 +16,14 @@ const Styles = StyleSheet.create({
       fontSize:17,
       textAlign:"justify",
       alignContent:"flex-start"
-    }
+    },
+
+    containerS: {
+      flex: 1,
+      backgroundColor: '#ff22',
+      alignItems: '',
+      justifyContent: '',
+    },
   
   })
   export default Styles;

@@ -1,9 +1,9 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Text, View } from 'react-native';
-import { Titulo, TituloIng, TituloPre } from '../Comonentes/Titulo';
+import { Titulo, TituloIng, TituloPre } from '../Componentes/Titulo';
 import Styles from './Styles';
-import { BotonInicio } from '../Comonentes/Botonmenu';
+import { BotonInicio } from '../Componentes/Botonmenu';
 
 
 export default function Receta3({navigation}) {

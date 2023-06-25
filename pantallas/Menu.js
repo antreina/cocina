@@ -1,7 +1,7 @@
 import * as React from "react";
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View ,TouchableOpacity, ScrollView} from 'react-native';
-import {Botonmenu,botonInicio} from "../Comonentes/Botonmenu";
+import { StyleSheet, Text, View ,ScrollView} from 'react-native';
+import {Botonmenu,botonInicio} from "../Componentes/Botonmenu";
 
 
 export default function Menu ({navigation}) {
@@ -10,8 +10,8 @@ export default function Menu ({navigation}) {
     <ScrollView style={styles.container}>
       <View style={styles.vista2}>
       <Text style={styles.titulo}>Cocina Ecuatoriana</Text>
+      <Text style={styles.titulo3}>GUARNICIONES, ENSALADAS Y SOPAS</Text>
       </View>
-
       <View style={styles.vista2}>
         <Botonmenu
             texto = "Chifles"
@@ -28,131 +28,219 @@ export default function Menu ({navigation}) {
         onPress={() => navigation.navigate('Receta3')} 
         />
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta4')} >
-        <Text style={styles.buttonText}>Ensalada de frijoles blancos</Text>
-      </TouchableOpacity>
+        <Botonmenu
+        texto = "Ensalada de frijoles blancos"
+        onPress={() => navigation.navigate('Receta4')}   
+        />
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta5')}>
-        <Text style={styles.buttonText}>Patacones</Text> 
-      </TouchableOpacity>
+        <Botonmenu
+        texto = "Patacones"
+        onPress={() => navigation.navigate('Receta5')}   
+        />
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta6')}>
-        <Text style={styles.buttonText}>Ensalada de beterava y zanahoria</Text>
-      </TouchableOpacity>
+        <Botonmenu
+        texto = "Ensalada de beterava y zanahoria"
+        onPress={() => navigation.navigate('Receta6')}   
+        />
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta7')}>
-        <Text style={styles.buttonText}>Sopa de bolas de verde</Text>
-      </TouchableOpacity>
+        <Botonmenu
+        texto = "Sopa de bolas de verde"
+        onPress={() => navigation.navigate('Receta7')}   
+        />
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta8')}>
-        <Text style={styles.buttonText}>Mote pillo</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.button}
-      onPress={() => navigation.navigate('Receta9')} >
-        <Text style={styles.buttonText}>Pan de yuca</Text>
-      </TouchableOpacity>
+        <Botonmenu
+        texto = "Mote pillo"
+        onPress={() => navigation.navigate('Receta8')}   
+        />
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta10')}>
-        <Text style={styles.buttonText}>Muchines de yuca</Text>
-      </TouchableOpacity>
+        <Botonmenu
+        texto = "Pan de yuca"
+        onPress={() => navigation.navigate('Receta9')}   
+        />
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta11')}>
-        <Text style={styles.buttonText}>Bolón de verdes</Text>
-      </TouchableOpacity>
+        <Botonmenu
+        texto = "Muchines de yuca"
+        onPress={() => navigation.navigate('Receta10')}   
+        />
 
-      <TouchableOpacity style={styles.button}
-      onPress={() => navigation.navigate('Receta12')} >
-        <Text style={styles.buttonText}>Picante de yuca con pollo</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta13')}>
-        <Text style={styles.buttonText}>Llapingachos</Text>
-      </TouchableOpacity>
+        <Text style={styles.titulo3}>VERDURAS, LEGUMBRES Y CERELES</Text>
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta14')}>
-        <Text style={styles.buttonText}>Niños envueltos</Text>
-      </TouchableOpacity>
+        <Botonmenu
+          texto = "Bolón de verdes"
+          onPress ={() => navigation.navigate('Receta11')} 
+        />
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta15')}>
-        <Text style={styles.buttonText}>Col morada hervida</Text>
-      </TouchableOpacity>
+        <Botonmenu
+          texto="Picante de yuca con pollo"
+          onPress={() => navigation.navigate('Receta12')} 
+        />
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta16')}>
-        <Text style={styles.buttonText}>Coliflor manabita</Text>
-      </TouchableOpacity>
+        <Botonmenu
+          texto ="Llapingachos"
+          onPress={() => navigation.navigate('Receta13')} 
+        />
 
-      <TouchableOpacity style={styles.button}
-      onPress={() => navigation.navigate('Receta17')} >
-        <Text style={styles.buttonText}>Moros y cristianos</Text>
-      </TouchableOpacity>
+        <Botonmenu
+          texto = "Niños envueltos"
+          onPress={() => navigation.navigate('Receta14')}   
+        />
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta18')}>
-        <Text style={styles.buttonText}>Menestra con carne</Text>
-      </TouchableOpacity>
+        <Botonmenu
+          texto = "Col morada hervida"
+          onPress={() => navigation.navigate('Receta15')}   
+       />
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta19')}>
-        <Text style={styles.buttonText}>Aguacate a la serrana</Text>
-      </TouchableOpacity>
+        <Botonmenu
+          texto = "Moros y cristianos"
+          onPress={() => navigation.navigate('Receta16')}   
+        />
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta20')}>
-        <Text style={styles.buttonText}>Torta de choclo</Text>
-      </TouchableOpacity>
+        <Botonmenu
+          texto = "Menestra con carne"
+          onPress={() => navigation.navigate('Receta17')}   
+        />
+        <Botonmenu
+          texto = "Aguacate a la serrana"
+          onPress={() => navigation.navigate('Receta18')}   
+        />
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta21')}>
-        <Text style={styles.buttonText}>Empanada de verde con carne</Text>
-      </TouchableOpacity>
+        <Botonmenu
+          texto = "Torta de choclo"
+          onPress={() => navigation.navigate('Receta19')}   
+        />
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta22')}>
-        <Text style={styles.buttonText}>Guatita</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta23')}>
-        <Text style={styles.buttonText}>Arroz con pollo</Text>
-      </TouchableOpacity>
+        <Text style={styles.titulo3}>CARNES</Text>
 
-      <TouchableOpacity style={styles.button} 
-      onPress={() => navigation.navigate('Receta24')}>
-        <Text style={styles.buttonText}>Fritada quiteña</Text>
-      </TouchableOpacity>
+        <Botonmenu
+          texto = "Empanada de verde con carne"
+          onPress={() => navigation.navigate('Receta20')}   
+        />
 
-      <TouchableOpacity style={styles.button} >
-        <Text style={styles.buttonText}>Lomito Saltado</Text>
-      </TouchableOpacity>
+        <Botonmenu
+            texto = "Guatita"
+            onPress ={() => navigation.navigate('Receta21')} 
+        />
 
-      <TouchableOpacity style={styles.button} >
-        <Text style={styles.buttonText}>Carne en palito</Text>
-      </TouchableOpacity>
+        <Botonmenu
+            texto="Arroz con pollo"
+            onPress={() => navigation.navigate('Receta22')} 
+        />
 
-      <TouchableOpacity style={styles.button} >
-        <Text style={styles.buttonText}>Seco de gallina</Text>
-      </TouchableOpacity>
+        <Botonmenu
+        texto ="Fritada quiteña"
+        onPress={() => navigation.navigate('Receta23')} 
+        />
 
-      <TouchableOpacity style={styles.button} >
-        <Text style={styles.buttonText}>Aji de gallina</Text>
-      </TouchableOpacity>
+        <Botonmenu
+        texto = "Lomito saltado"
+        onPress={() => navigation.navigate('Receta24')}   
+        />
 
-      <TouchableOpacity style={styles.button} >
-        <Text style={styles.buttonText}>Seco de chivo</Text>
-      </TouchableOpacity>
+        <Botonmenu
+        texto = "Carne en palito"
+        onPress={() => navigation.navigate('Receta25')}   
+        />
 
-      <TouchableOpacity style={styles.button} >
-        <Text style={styles.buttonText}>Carne molida al horno</Text>
-      </TouchableOpacity>
+        <Botonmenu
+        texto = "Seco de gallina"
+        onPress={() => navigation.navigate('Receta26')}   
+        />
+
+        <Botonmenu
+        texto = "Ají de gallina"
+        onPress={() => navigation.navigate('Receta27')}   
+        />
+        <Botonmenu
+        texto = "Seco de chivo"
+        onPress={() => navigation.navigate('Receta28')}   
+        />
+
+        <Botonmenu
+        texto = "Carne molida al horno"
+        onPress={() => navigation.navigate('Receta29')}   
+        />
+
+        <Text style={styles.titulo3}>PESCADOS Y MARISCOS</Text>
+
+        <Botonmenu
+        texto = "Sango de verde con camarones"
+        onPress={() => navigation.navigate('Receta30')}   
+        />
+                <Botonmenu
+            texto = "Corvina frita con patacones"
+            onPress ={() => navigation.navigate('Receta31')} 
+        />
+
+        <Botonmenu
+            texto="Encebollado de pescado"
+            onPress={() => navigation.navigate('Receta32')} 
+        />
+
+        <Botonmenu
+        texto ="Enrrollado de atun"
+        onPress={() => navigation.navigate('Receta33')} 
+        />
+
+        <Botonmenu
+        texto = "Cebiche de camarones"
+        onPress={() => navigation.navigate('Receta34')}   
+        />
+
+        <Botonmenu
+        texto = "Chupe de atún"
+        onPress={() => navigation.navigate('Receta35')}   
+        />
+
+        <Botonmenu
+        texto = "Sancocho de pescado"
+        onPress={() => navigation.navigate('Receta36')}   
+        />
+
+        <Botonmenu
+        texto = "Sudado de pescado"
+        onPress={() => navigation.navigate('Receta37')}   
+        />
+        <Botonmenu
+        texto = "Encocado de camarones"
+        onPress={() => navigation.navigate('Receta38')}   
+        />
+
+        <Botonmenu
+        texto = "cebiche de pescado"
+        onPress={() => navigation.navigate('Receta39')}   
+        />
+
+        <Text style={styles.titulo3}>POSTRES</Text>
+
+        <Botonmenu
+        texto = "Cocadas"
+        onPress={() => navigation.navigate('Receta40')}   
+        />
+
+        <Botonmenu
+        texto = "Torta de maduro"
+        onPress={() => navigation.navigate('Receta41')}   
+        />
+
+        <Botonmenu
+        texto = "Colada morada"
+        onPress={() => navigation.navigate('Receta42')}   
+        />
+
+        <Botonmenu
+        texto = "Torta de zapallo"
+        onPress={() => navigation.navigate('Receta43')}   
+        />
+
+        <Botonmenu
+        texto = "Panqueques de guineo"
+        onPress={() => navigation.navigate('Receta44')}   
+        />
+
+        <Botonmenu
+        texto = "Morocho"
+        onPress={() => navigation.navigate('Receta45')}   
+        />
       </View>
 
 
@@ -173,20 +261,27 @@ const styles = StyleSheet.create({
     marginEnd:20,
     alignContent:"center"
   },
-
-  vista2:{
-    flex:1,
-    backgroundColor:"#65e6cc",
-    alignItems:"center",
-
-  },
-
   titulo:{
     margin:"3%",
     color: "#fa4211",
     fontSize:20,
     fontWeight:"bold",
+  },
+  
+  vista2:{
+    flex:1,
+    backgroundColor:"#BEEEE7",
+    alignItems:"center",
 
   },
+
+  titulo3:{
+    margin:"2%",
+    color: "#97AC94",
+    fontSize:20,
+    fontWeight:"bold",
+  },
+  
+
 
 });
