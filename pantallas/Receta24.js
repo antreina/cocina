@@ -1,15 +1,19 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
+import { Text, View,ScrollView } from 'react-native';
 import {Botonmenu , BotonInicio} from '../Componentes/Botonmenu';
 import { Titulo, TituloIng, TituloPre } from '../Componentes/Titulo';
 import Styles from './Styles';
+import { Imagenes } from '../Componentes/Imagenes';
+
 
 
 export default function Receta24({navigation}) {
   return (
+    <ScrollView  >
     <View style={Styles.container}>
       <Titulo textTitulo = "Lomito saltado"></Titulo>
+      <Imagenes texto = {require ("../src/imagenes/Lomitosaltado.png")}/>
 
       <TituloIng/>
         <Text style={Styles.texto} > 
@@ -45,5 +49,6 @@ export default function Receta24({navigation}) {
       />
       <StatusBar style="auto" />
     </View>
+    </ScrollView>
   );
 }

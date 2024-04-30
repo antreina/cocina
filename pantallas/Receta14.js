@@ -4,12 +4,16 @@ import { Text, View } from 'react-native';
 import {Botonmenu , BotonInicio} from '../Componentes/Botonmenu';
 import { Titulo, TituloIng, TituloPre } from '../Componentes/Titulo';
 import Styles from './Styles';
+import { Imagenes } from '../Componentes/Imagenes';
+import { ScrollView } from 'react-native-gesture-handler';
 
 
 export default function Receta14({navigation}) {
   return (
+    <ScrollView>
     <View style={Styles.container}>
       <Titulo textTitulo = "Niños envueltos"></Titulo>
+      <Imagenes texto = {require ("../src/imagenes/Ninosenvueltos.png")}/>
 
       <TituloIng/>
         <Text style={Styles.texto} > 
@@ -47,5 +51,6 @@ export default function Receta14({navigation}) {
       />
       <StatusBar style="auto" />
     </View>
+    </ScrollView>
   );
 }

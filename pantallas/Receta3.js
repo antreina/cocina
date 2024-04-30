@@ -4,7 +4,7 @@ import { Text, View } from 'react-native';
 import { Titulo, TituloIng, TituloPre } from '../Componentes/Titulo';
 import Styles from './Styles';
 import { BotonInicio } from '../Componentes/Botonmenu';
-
+import { Imagenes } from '../Componentes/Imagenes';
 
 export default function Receta3({navigation}) {
 
@@ -12,6 +12,7 @@ export default function Receta3({navigation}) {
 
         <View style={Styles.container}>
             <Titulo textTitulo ="Locro de papa"></Titulo>
+            <Imagenes texto = {require ("../src/imagenes/Locrodepapa.png")}/>
             <TituloIng/>
             <Text style ={Styles.texto} >
             4 papas grandes, peladas y cortadas en cubos{'\n'}

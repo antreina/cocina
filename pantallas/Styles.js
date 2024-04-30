@@ -24,6 +24,12 @@ const Styles = StyleSheet.create({
       alignItems: '',
       justifyContent: '',
     },
+
+    estiloimag:{
+      width:"50%",
+      height:150,
+      borderRadius:10,
+    },
   
   })
   export default Styles;

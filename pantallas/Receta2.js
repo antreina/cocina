@@ -4,11 +4,16 @@ import { Text, View } from 'react-native';
 import {Botonmenu , BotonInicio} from '../Componentes/Botonmenu';
 import { Titulo, TituloIng, TituloPre } from '../Componentes/Titulo';
 import Styles from './Styles';
+import { Imagenes } from '../Componentes/Imagenes';
 
 export default function Receta2({navigation}) {
   return (
     <View style={Styles.container}>
       <Titulo textTitulo = "Ensalada de vegetales"></Titulo>
+      
+      <Imagenes
+        texto = {require ("../src/imagenes/Ensaladadevegetales.png")}
+      />
 
       <TituloIng/>
         <Text style={Styles.texto} > 
